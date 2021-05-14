@@ -44,3 +44,33 @@ console.log(exo8);
 let exo9 = document.querySelector('#inputPassword3');
 exo9.setAttribute('type', 'color');
 console.log(exo9);
+
+
+//correction
+
+//exo1
+let h2Rec = document.querySelector('h2');
+console.log(h2Rec.innerText);
+
+//exo2
+h2Rec.innerText = "Exercice 1";
+
+//exo3
+let p = h2Rec.nextElementSibling;
+p.innerText = "Exercice 1"
+
+//exo4
+let premierSection = document.querySelector('section');
+console.log(premierSection.id);
+
+//exo5
+let premierH1 = document.querySelector('h1');
+console.log(premierH1.className);
+console.log(premierH1.getAttribute('class'));
+console.log(premierH1.classList);
+
+//exo6
+let exo6bis = document.querySelectorAll('h1');
+exo6bis.forEach(element => {
+    console.log(element.className);
+});
