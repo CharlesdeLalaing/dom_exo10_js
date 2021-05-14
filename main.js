@@ -37,7 +37,7 @@ console.log(exo6);
 let exo7 = document.querySelector('input').getAttribute('type');
 console.log(exo7);
 //exo9
-let exo8 = document.querySelector('#inputPassword3');
+let exo8 = document.querySelector('input#inputPassword3');
 exo8.setAttribute("type", "password");
 console.log(exo8);
 //exo10
@@ -74,3 +74,18 @@ let exo6bis = document.querySelectorAll('h1');
 exo6bis.forEach(element => {
     console.log(element.className);
 });
+
+//exo7
+let premierInput = document.querySelector('input');
+console.log(premierInput.attributes);
+
+//exo8
+console.log(premierInput.getAttribute('type'));
+
+//exo9
+let inputPass3 = document.querySelector('input#inputPassword3');
+inputPass3.setAttribute('type', 'password');
+console.log(inputPass3);
+//exo10
+premierInput.setAttribute('type', 'color');
+console.log(premierInput.attributes.type);
